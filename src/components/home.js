@@ -17,7 +17,7 @@ const Home = () => {
         Gk: "",
         Qk: "",
         fcu: 25,
-        fy: 250,
+        fy: 410,
         cover: 25,
         condition: "IP",
         dropData: {

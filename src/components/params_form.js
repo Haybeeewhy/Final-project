@@ -187,13 +187,13 @@ export default function ParamsForm({ data, setData, projectID }) {
                       <div className="row">
                         <div className="col-sm-4">
                           <div className="form-group">
-                            <label className="mb-1 small">Concrete Grade (N/mm2)</label>
+                            <label className="mb-1 small">Concrete Grade (N/mm²)</label>
                             <input type="number" name="fcu" value={data.fcu} onChange={handleChange} className="form-control contact-form" placeholder="fcu" required />
                           </div>
                         </div>
                         <div className="col-sm-4">
                           <div className="form-group">
-                            <label className="mb-1 small">Rebar Grade (N/mm2)</label>
+                            <label className="mb-1 small">Rebar Grade (N/mm²)</label>
                             <input type="number" name="fy" value={data.fy} onChange={handleChange} className="form-control contact-form" placeholder="fy" required />
                           </div>
                         </div>
@@ -342,8 +342,8 @@ const ResultModal = ({ show, handleClose, handleSave, slab }) => {
 
           <div className="mb-3">
             <h6>Material Properties</h6>
-            <div><span className="fw-medium">Concrete Grade:</span> {cleanFloat(slab.fcu)} N/mm2</div>
-            <div><span className="fw-medium">Reinforcement Grade:</span> {cleanFloat(slab.fy)} N/mm2</div>
+            <div><span className="fw-medium">Concrete Grade:</span> {cleanFloat(slab.fcu)} N/mm²</div>
+            <div><span className="fw-medium">Reinforcement Grade:</span> {cleanFloat(slab.fy)} N/mm²</div>
             <div><span className="fw-medium">Concrete Cover:</span> {cleanFloat(slab.cover)} mm</div>
           </div>
 

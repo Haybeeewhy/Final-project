@@ -38,8 +38,8 @@ function calculateRequiredSteelAreaNegativeMoments(moment, concreteGrade, steelG
 }
 
 // Sample input parameters
-const liveLoad = 10; // kN/m2
-const deadLoad = 15; // kN/m2
+const liveLoad = 10; // kN/m²
+const deadLoad = 15; // kN/m²
 const liveLoadFactor = 1.5;
 const deadLoadFactor = 1.2;
 const span = 5; // meters
@@ -61,12 +61,12 @@ const AstNegativeMomentsMidSpan = calculateRequiredSteelAreaNegativeMoments(maxi
 const AstNegativeMomentsNearColumns = calculateRequiredSteelAreaNegativeMoments(maximumMoments.negativeMomentNearColumns, concreteGrade, steelGrade);
 
 // Output the results
-console.log("Factored Loads:", factoredLoads, "kN/m2");
+console.log("Factored Loads:", factoredLoads, "kN/m²");
 console.log("Positive Moments at Mid-Span:", maximumMoments.positiveMomentMidSpan, "kNm");
 console.log("Positive Moments near Columns:", maximumMoments.positiveMomentNearColumns, "kNm");
-console.log("Required Steel Area for Positive Moments at Mid-Span:", AstPositiveMomentsMidSpan, "mm2");
-console.log("Required Steel Area for Positive Moments near Columns:", AstPositiveMomentsNearColumns, "mm2");
+console.log("Required Steel Area for Positive Moments at Mid-Span:", AstPositiveMomentsMidSpan, "mm²");
+console.log("Required Steel Area for Positive Moments near Columns:", AstPositiveMomentsNearColumns, "mm²");
 console.log("Negative Moments at Mid-Span:", maximumMoments.negativeMomentMidSpan, "kNm");
 console.log("Negative Moments near Columns:", maximumMoments.negativeMomentNearColumns, "kNm");
-console.log("Required Steel Area for Negative Moments at Mid-Span:", AstNegativeMomentsMidSpan, "mm2");
-console.log("Required Steel Area for Negative Moments near Columns:", AstNegativeMomentsNearColumns, "mm2");
+console.log("Required Steel Area for Negative Moments at Mid-Span:", AstNegativeMomentsMidSpan, "mm²");
+console.log("Required Steel Area for Negative Moments near Columns:", AstNegativeMomentsNearColumns, "mm²");
