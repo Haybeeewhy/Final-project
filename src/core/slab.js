@@ -228,7 +228,7 @@ class FlatSlab {
 
     rebarDetails(section) {
         let { AsProvided, noOfBars, barSize } = this.getSelectBar(section)
-        return `${noOfBars} Y${barSize} (${AsProvided} mm2)`
+        return `${noOfBars} Y${barSize} (${AsProvided} mm²)`
     }
 
     get supportEffectiveDepth() {

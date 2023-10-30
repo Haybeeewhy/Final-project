@@ -388,19 +388,19 @@ const ResultModal = ({ show, handleClose, handleSave, slab }) => {
             {slab.column_head && <>
               <div className="mb-2">
                 <div>At the Column head</div>
-                <div><span className="fw-medium">Shear Stress:</span> {cleanFloat(slab.shearStressAtColumnHead)} N/mm2</div>
+                <div><span className="fw-medium">Shear Stress:</span> {cleanFloat(slab.shearStressAtColumnHead)} N/mm²</div>
                 <div><span className="fw-medium">Status:</span> <AdequateComponent state={slab.isShearAdequate(slab.shearStressAtColumnHead, slab.max_shear_stress_factor)} /></div>
               </div>
             </>}
             <div className="mb-2">
               <div>First Critical Perimeter</div>
-              <div><span className="fw-medium">Shear Stress:</span> {cleanFloat(slab.shearStressAtFirstCriticalPerimeter)} N/mm2</div>
+              <div><span className="fw-medium">Shear Stress:</span> {cleanFloat(slab.shearStressAtFirstCriticalPerimeter)} N/mm²</div>
               <div><span className="fw-medium">Status:</span> <AdequateComponent state={slab.isShearAdequate(slab.shearStressAtFirstCriticalPerimeter, slab.vc)} /></div>
             </div>
             {slab.drop && <>
               <div className="mb-2">
                 <div>At the dropped panel</div>
-                <div><span className="fw-medium">Shear Stress:</span> {cleanFloat(slab.shearStressAtDropCriticalSection)} N/mm2</div>
+                <div><span className="fw-medium">Shear Stress:</span> {cleanFloat(slab.shearStressAtDropCriticalSection)} N/mm²</div>
                 <div><span className="fw-medium">Status:</span> <AdequateComponent state={slab.isShearAdequate(slab.shearStressAtDropCriticalSection, slab.vc)} /></div>
               </div>
             </>}
